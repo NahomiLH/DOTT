@@ -11,7 +11,8 @@ pipeline {
         sh '''git version
 go version
 cd cidr_convert_api/go
-#goop install
+docker build -t gom .
+
 '''
       }
     }
