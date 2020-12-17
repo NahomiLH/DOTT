@@ -10,6 +10,7 @@ pipeline {
       steps {
         sh '''git version
 go version
+cd
 pwd
 ls
 cd cidr_convert_api/go
