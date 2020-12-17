@@ -10,9 +10,9 @@ pipeline {
       steps {
         sh '''git version
 go version
+ls
 cd cidr_convert_api/go
 #goop install
-ls
 
 '''
       }
