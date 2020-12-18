@@ -22,7 +22,7 @@ ls'''
     stage('Test') {
       steps {
         dir(path: 'cidr_convert_api/go/') {
-          sh '''go test convert_test.go -coverprofile=coverage.txt
+          sh '''go test -coverprofile=coverage.txt
 bash <(curl -s https://codecov.io/bash)'''
         }
 
