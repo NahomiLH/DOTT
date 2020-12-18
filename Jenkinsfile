@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
           sh 'cd cidr_convert_api/go/'
-          sh 'sudo docker build -t gom .'
+          sh 'go build api.go convert.go'
         }
 
       }
