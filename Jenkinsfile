@@ -19,6 +19,12 @@ ls'''
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'go test convert.go'
+      }
+    }
+
   }
   tools {
     go 'go-1.15.6'
