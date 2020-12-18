@@ -21,6 +21,7 @@ ls'''
 
     stage('Test') {
       steps {
+        dir(path: 'cidr_convert_api/go/')
         sh 'go test convert.go'
       }
     }
