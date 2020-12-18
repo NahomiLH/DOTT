@@ -25,7 +25,7 @@ ls'''
           sh '''set +e
 go test -coverprofile=coverage.txt
 ls
-curl -s https://codecov.io/ -t CODECOV_TOKEN'''
+curl -s . https://codecov.io/ -t CODECOV_TOKEN'''
         }
 
       }
