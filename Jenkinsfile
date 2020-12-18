@@ -7,7 +7,7 @@ pipeline {
     stage('Build') {
       steps {
         script {
-          sh 'cd DOTT/cidr_convert_api/go/'
+          sh 'cd cidr_convert_api/go/'
           sh 'sudo docker build -t gom .'
 
         }
