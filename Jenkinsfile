@@ -23,7 +23,7 @@ ls'''
       steps {
         dir(path: 'cidr_convert_api/go/') {
           sh '''go test convert_test.go -coverprofile=coverage.txt
-curl -s https://codecov.io/gh/NahomiLH/DOTT'''
+curl -s https://codecov.io/bash -t CODECOVE_TOKEN'''
         }
 
       }
