@@ -26,7 +26,8 @@ ls'''
 go test -coverprofile=coverage.xml
 ls
 --
-curl -s . https://codecov.io/ -t CODECOV_TOKEN'''
+curl -s . https://codecov.io/ -t CODECOV_TOKEN
+cat coverage.xml'''
         }
 
       }
